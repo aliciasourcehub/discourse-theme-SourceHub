@@ -23,3 +23,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700; /* Appliquer le poids Bold sur les titres */
 }
+
+.custom-section {
+    background-color: #ffcc00;  /* Ajoute une couleur de fond pour tester */
+    border: 1px solid red;      /* Ajoute une bordure pour rendre la section visible */
+    padding: 20px;
+  }
