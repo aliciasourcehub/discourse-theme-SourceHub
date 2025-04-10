@@ -16,6 +16,10 @@ html, body {
   color: #07556d;
 }
 
+.sidebar-section {
+  color: #000000;
+}
+
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
@@ -709,8 +713,4 @@ html body #main-outlet {
 .title-voting {
   padding-left: 14px;
   color: #000000; /* Texte en noir */
-}
-
-.sidebar-section-link-wrapper .sidebar-section-link--active, .sidebar-section-link-wrapper .sidebar-section-link.active {
-  color: #000000;
 }
