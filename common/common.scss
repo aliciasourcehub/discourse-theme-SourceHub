@@ -87,8 +87,8 @@ html, body {
   }
 
   .search-menu .search-input {
-    border-color: var(--tertiary-hover);
-    outline: 1px solid var(--tertiary-hover);
+    border-color: #6b54de;
+    outline: #6b54de;
     color: #000000; /* Texte en noir */
   }
 
@@ -350,8 +350,8 @@ html {
     width: 100vw;
     background: linear-gradient(
       90deg,
-      var(--tertiary-hover) 0%,
-      var(--tertiary) 100%
+      #6b54de 0%,
+      #6b54de 100%
     );
     clip-path: ellipse(148% 70% at 91% -14%);
   }
