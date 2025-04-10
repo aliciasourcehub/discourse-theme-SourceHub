@@ -1,57 +1,22 @@
-// custom search banner customizations
-
+/* Import de la police IBM Plex Sans (facultatif, si tu veux l'utiliser) */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
 
+/* Police globale et texte en noir par défaut */
 html, body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif; /* Optionnel : ajoute cette ligne si tu veux la police */
+  color: #000000; /* Tout le texte en noir */
 }
 
-.d-header {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-  color: #000000; /* Texte en noir dans le header */
+/* Couleur globale pour les icônes */
+.d-icon, svg {
+  color: #07556d; /* Toutes les icônes en #07556d */
 }
 
-.d-header-icons .d-icon {
-  color: #07556d; /* Icônes en #07556d */
-  border-radius: 100px;
-}
-
-.d-header-icons .icon {
-  border-radius: 0.25em;
-  margin-left: 0.3em;
-  border: 1px solid transparent;
-  color: #07556d; /* S'assure que toutes les icônes utilisent cette couleur */
-
-  svg {
-    font-size: 1.25em;
-    color: #07556d; /* Couleur spécifique pour les SVG dans les icônes */
-  }
-}
-
-.d-header-icons .icon img.avatar {
-  border-radius: 0.25em;
-}
-
-/* Si le texte des liens ou autres éléments dans le header doit aussi être noir */
-.d-header a,
-.d-header .title,
-.d-header .d-header-icons .icon:hover {
-  color: #000000; /* Texte noir pour les liens et sur hover */
-}
-
-/* Surcharge pour l'état actif des icônes */
-.drop-down-mode .d-header-icons .active .icon {
-  border: 1px solid transparent;
-}
-
-.drop-down-mode .d-header-icons .active .icon .d-icon {
-  color: #07556d; /* Garde les icônes en #07556d même en état actif */
-}
-
+// custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
   max-width: unset;
-  color: var(--secondary);
+  color: #000000; /* Texte en noir */
 
   h1 {
     line-height: var(--line-height-small);
@@ -72,47 +37,53 @@ html, body {
 
   .btn {
     height: 100%;
+    color: #000000; /* Boutons en noir */
   }
 
   .search-menu input[type="text"] {
     border: 1px solid transparent;
     border-radius: 0.25em;
     min-height: 40px;
+    color: #000000; /* Texte de l'input en noir */
 
     &:focus {
-      outline: 3px solid rgba(var(--primary-rgb), 0.35);
+      outline: 3px solid rgba(7, 85, 109, 0.35); /* Ajusté pour correspondre à #07556d */
     }
   }
 
   .widget-link.show-help {
-    color: rgba(var(--primary-rgb), 0.75);
+    color: rgba(7, 85, 109, 0.75); /* Ajusté pour #07556d */
     border-radius: 0.5em;
     padding: 0.5em;
     background-color: rgba(var(--secondary-rgb), 0.25);
 
     &:hover {
-      color: var(--primary);
+      color: #07556d; /* Hover en #07556d */
     }
   }
 
   .search-menu .search-input {
     border-color: var(--tertiary-hover);
     outline: 1px solid var(--tertiary-hover);
+    color: #000000; /* Texte en noir */
   }
 
   .results {
     top: 43px;
     border-radius: 0.25em;
+    color: #000000; /* Texte en noir */
   }
 
   .search-context {
     top: 3.25em;
     right: 1em;
+    color: #000000; /* Texte en noir */
   }
 }
 
 .search-input {
   border-radius: 0.25em;
+  color: #000000; /* Texte en noir */
 }
 
 .display-search-banner {
@@ -121,15 +92,13 @@ html, body {
   }
 }
 
-// Ideally the search banner component should be set to use the below-site-header outlet,
-// but this ensures the default works too
 .above-main-container-outlet.search-banner {
   .custom-search-banner-wrap {
     padding: 1em 0 2em;
-    color: var(--tertiary);
+    color: #000000; /* Texte en noir */
 
     .mobile-view & {
-      color: var(--secondary);
+      color: #000000; /* Texte en noir même en mobile */
     }
 
     h1 {
@@ -145,21 +114,25 @@ html, body {
 // Main customizations
 .alert {
   margin: 1em 0;
+  color: #000000; /* Texte en noir */
 }
 
 .topic-list .topic-list-header .topic-list-data,
 .topic-list .topic-list-item .topic-list-data {
   padding: 15px 5px;
+  color: #000000; /* Texte en noir */
 }
 
 .navigation-topics .topic-list .topic-list-body .topic-list-data,
 .navigation-topics .topic-list .topic-list-header .topic-list-data {
   flex: unset;
+  color: #000000; /* Texte en noir */
 }
 
 .badge-wrapper.box {
   border-radius: 0.25em;
   overflow: hidden;
+  color: #000000; /* Texte en noir */
 }
 
 .badge-wrapper.bullet {
@@ -189,11 +162,11 @@ html, body {
   border-radius: 0.25em;
   padding: 0.15em 0.25em 0.15em 0.35em;
   background-color: var(--primary-low);
-  color: var(--primary) !important;
+  color: #000000 !important; /* Texte en noir avec priorité */
 
   &:hover {
     background-color: var(--primary-low-mid);
-    color: var(--primary);
+    color: #000000; /* Texte en noir */
   }
 }
 
@@ -210,7 +183,7 @@ html, body {
 }
 
 #site-text-logo {
-  color: var(--primary);
+  color: #000000; /* Texte en noir */
 }
 
 .mobile-view {
@@ -225,6 +198,7 @@ html, body {
 
 .not-found-container {
   background-color: var(--secondary);
+  color: #000000; /* Texte en noir */
 }
 
 input[type="text"],
@@ -245,13 +219,16 @@ input[type="color"],
 .d-editor-textarea-wrapper,
 div.ac-wrap {
   border-radius: 4px;
+  color: #000000; /* Texte en noir */
 }
 
 .d-header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  color: #000000; /* Texte en noir */
 }
 
 .d-header-icons .d-icon {
+  color: #07556d; /* Icônes en #07556d */
   border-radius: 100px;
 }
 
@@ -259,9 +236,11 @@ div.ac-wrap {
   border-radius: 0.25em;
   margin-left: 0.3em;
   border: 1px solid transparent;
+  color: #07556d; /* Icônes en #07556d */
 
   svg {
     font-size: 1.25em;
+    color: #07556d; /* SVG en #07556d */
   }
 }
 
@@ -273,13 +252,14 @@ div.ac-wrap {
   margin-top: 1em;
   border-radius: 0.5em;
   border: 1px solid var(--primary-low-mid);
+  color: #000000; /* Texte en noir */
 }
 
 .drop-down-mode .d-header-icons .active .icon {
   border: 1px solid transparent;
 
   .d-icon {
-    color: var(--tertiary);
+    color: #07556d; /* Icônes en #07556d */
   }
 }
 
@@ -292,22 +272,26 @@ div.ac-wrap {
 .menu-panel .categories-link:hover,
 .menu-panel .categories-link:focus {
   background-color: rgba(var(--tertiary-rgb), 0.5);
+  color: #000000; /* Texte en noir */
 }
 
 .btn:not(.themes-tab, .components-tab),
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   border-radius: 8px;
   border: 1px solid transparent;
+  color: #000000; /* Texte en noir */
 }
 
 .post-admin-menu.popup-menu {
   .btn.widget-button {
     border-radius: 0;
+    color: #000000; /* Texte en noir */
   }
 }
 
 .unread-high-priority-notifications {
   background: var(--quaternary);
+  color: #000000; /* Texte en noir */
 }
 
 .timeline-container .topic-timeline .timeline-handle {
@@ -327,6 +311,7 @@ html {
         rgba(var(--primary-rgb), 0.075) 100%
       ),
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
+    color: #000000; /* Texte en noir */
   }
 
   .background-container {
@@ -355,12 +340,13 @@ html body #main-outlet {
   border-radius: 1em;
   padding: 3em 3em 5%;
   max-width: 1150px;
-  padding-bottom: 5% !important; // overriding inline style
+  padding-bottom: 5% !important;
   box-shadow:
     0 24px 40px rgba(0, 0, 0, 0.07),
     0 10.8529px 24.1177px rgba(0, 0, 0, 0.0456112),
     0 4.50776px 10.0172px rgba(0, 0, 0, 0.035),
     0 1.63037px 3.62304px rgba(0, 0, 0, 0.0243888);
+  color: #000000; /* Texte en noir */
 
   @media screen and (max-width: 700px) {
     padding: 1.5em;
@@ -383,6 +369,7 @@ html body #main-outlet {
 .nav-pills:not(.user-nav) > li a.active,
 .nav-pills:not(.user-nav) > li > a {
   border-radius: 0.5em;
+  color: #000000; /* Texte en noir */
 }
 
 .category-calendar {
@@ -393,6 +380,7 @@ html body #main-outlet {
   padding: 1em;
   border-radius: 8px;
   margin-bottom: 1em;
+  color: #000000; /* Texte en noir */
 }
 
 .discourse-post-event-upcoming-events {
@@ -400,10 +388,10 @@ html body #main-outlet {
   border-radius: 8px;
   padding: 1em;
   margin-bottom: 1em;
+  color: #000000; /* Texte en noir */
 }
 
 // Topic List
-
 @keyframes background-fade-highlight {
   0% {
     background-color: var(--highlight-low);
@@ -466,6 +454,7 @@ html body #main-outlet {
       transition: box-shadow 100ms ease-in-out;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
       overflow: hidden;
+      color: #000000; /* Texte en noir */
 
       &.visited {
         border: 1px solid rgba(var(--primary-rgb), 0.1);
@@ -490,7 +479,7 @@ html body #main-outlet {
 
         a.title:not(.badge-notification),
         a.topic-excerpt {
-          color: var(--primary) !important;
+          color: #000000 !important; /* Texte en noir */
         }
       }
 
@@ -550,6 +539,7 @@ html body #main-outlet {
 
       .title {
         font-weight: bold;
+        color: #000000; /* Texte en noir */
       }
 
       .link-area {
@@ -568,7 +558,7 @@ html body #main-outlet {
       }
     }
 
-    .posters {
+    .posts {
       .avatar {
         width: 40px;
         height: 40px;
@@ -602,6 +592,7 @@ html body #main-outlet {
     .num.age.activity {
       a {
         padding: 0;
+        color: #000000; /* Texte en noir */
       }
     }
 
@@ -615,12 +606,12 @@ html body #main-outlet {
 
     .post-activity {
       .d-icon-reply {
-        color: var(--primary-medium);
+        color: #07556d; /* Icône en #07556d */
         margin-right: 0.25em;
       }
 
       .relative-date {
-        color: var(--primary-medium);
+        color: #000000; /* Texte en noir */
       }
     }
   }
@@ -645,6 +636,7 @@ html body #main-outlet {
     0 1.63037px 3.62304px rgba(0, 0, 0, 0.0243888);
   z-index: 1;
   position: relative;
+  color: #000000; /* Texte en noir */
 }
 
 .published-page {
@@ -670,6 +662,7 @@ html body #main-outlet {
 
 .quote-button {
   border-radius: 0.5em;
+  color: #000000; /* Texte en noir */
 }
 
 .topic-list .main-link.focused + .posters {
@@ -682,4 +675,5 @@ html body #main-outlet {
 
 .title-voting {
   padding-left: 14px;
+  color: #000000; /* Texte en noir */
 }
