@@ -24,6 +24,10 @@ html, body {
   color: #000000;
 }
 
+.topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+  color: #000000;
+}
+
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
