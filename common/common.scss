@@ -4,7 +4,7 @@
 /* Police globale et texte en noir par défaut */
 html, body {
   font-family: 'IBM Plex Sans', sans-serif; /* Optionnel : ajoute cette ligne si tu veux la police */
-  color: #000000; /* Tout le texte en noir */
+  color: #000000 !important; /* Tout le texte en noir */
 }
 
 /* Couleur globale pour les icônes */
