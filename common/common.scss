@@ -87,8 +87,8 @@ html, body {
   }
 
   .search-menu .search-input {
-    border-color: #6b54de;
-    outline: 1px solid #6b54de;
+    border-color: var(--tertiary-hover);
+    outline: 1px solid var(--tertiary-hover);
     color: #000000; /* Texte en noir */
   }
 
@@ -299,7 +299,7 @@ div.ac-wrap {
 .menu-panel .widget-link:focus,
 .menu-panel .categories-link:hover,
 .menu-panel .categories-link:focus {
-  background-color: rgba(#6b54de, 0.5);
+  background-color: #6b54de;
   color: #000000; /* Texte en noir */
 }
 
@@ -350,8 +350,8 @@ html {
     width: 100vw;
     background: linear-gradient(
       90deg,
-      var(#6b54de) 0%,
-      var(#6b54de) 100%
+      var(--tertiary-hover) 0%,
+      var(--tertiary) 100%
     );
     clip-path: ellipse(148% 70% at 91% -14%);
   }
@@ -572,7 +572,7 @@ html body #main-outlet {
         }
 
         &:focus-visible td:nth-of-type(2) {
-          box-shadow: inset 3px 0 0 var(#6b54de);
+          box-shadow: inset 3px 0 0 var(--tertiary);
           border-radius: calc(1em - 3px);
         }
       }
@@ -696,8 +696,8 @@ html body #main-outlet {
   &::before {
     background: linear-gradient(
       90deg,
-      var(#6b54de) 0%,
-      var(#6b54de) 100%
+      #6b54de 0%,
+      #6b54de 100%
     );
     clip-path: ellipse(148% 70% at 91% -14%);
     content: "";
@@ -715,7 +715,7 @@ html body #main-outlet {
 }
 
 .topic-list .main-link.focused + .posters {
-  box-shadow: inset 3px 0 0 #6b54de;
+  box-shadow: inset 3px 0 0 var(--tertiary);
   color: #000000;
 
 }
