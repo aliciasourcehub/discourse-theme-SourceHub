@@ -6,6 +6,48 @@ html, body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.d-header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  color: #000000; /* Texte en noir dans le header */
+}
+
+.d-header-icons .d-icon {
+  color: #07556d; /* Icônes en #07556d */
+  border-radius: 100px;
+}
+
+.d-header-icons .icon {
+  border-radius: 0.25em;
+  margin-left: 0.3em;
+  border: 1px solid transparent;
+  color: #07556d; /* S'assure que toutes les icônes utilisent cette couleur */
+
+  svg {
+    font-size: 1.25em;
+    color: #07556d; /* Couleur spécifique pour les SVG dans les icônes */
+  }
+}
+
+.d-header-icons .icon img.avatar {
+  border-radius: 0.25em;
+}
+
+/* Si le texte des liens ou autres éléments dans le header doit aussi être noir */
+.d-header a,
+.d-header .title,
+.d-header .d-header-icons .icon:hover {
+  color: #000000; /* Texte noir pour les liens et sur hover */
+}
+
+/* Surcharge pour l'état actif des icônes */
+.drop-down-mode .d-header-icons .active .icon {
+  border: 1px solid transparent;
+}
+
+.drop-down-mode .d-header-icons .active .icon .d-icon {
+  color: #07556d; /* Garde les icônes en #07556d même en état actif */
+}
+
 .custom-search-banner-wrap {
   margin: 0 auto !important;
   max-width: unset;
