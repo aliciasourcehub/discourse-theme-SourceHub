@@ -420,28 +420,40 @@ html body #main-outlet {
     tr {
       display: flex;
       border-bottom: none;
+      color: #000000;
+
     }
     display: contents;
 
     .topic-list-data.default {
       width: 63%;
+      color: #000000;
+
     }
 
     .topic-list-data.posters {
       width: 7%;
+      color: #000000;
+
     }
 
     .topic-list-data.posts {
       width: 15%;
+      color: #000000;
+
     }
 
     .topic-list-data.activity {
       width: 15%;
+      color: #000000;
+
     }
   }
 
   .topic-list-body {
     display: contents;
+    color: #000000;
+
 
     .topic-list-item-separator {
       width: 100%;
@@ -495,6 +507,8 @@ html body #main-outlet {
       .topic-list-data.main-link {
         width: 63%;
         order: 2;
+        color: #000000;
+
       }
 
       .topic-list-data.posters {
@@ -504,6 +518,8 @@ html body #main-outlet {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #000000;
+
 
         a:not(.latest) {
           display: none;
@@ -516,6 +532,8 @@ html body #main-outlet {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #000000;
+
       }
 
       .topic-list-data.age {
@@ -524,6 +542,8 @@ html body #main-outlet {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #000000;
+
       }
 
       &.selected {
@@ -676,10 +696,14 @@ html body #main-outlet {
 
 .topic-list .main-link.focused + .posters {
   box-shadow: inset 3px 0 0 var(--tertiary);
+  color: #000000;
+
 }
 
 .topic-list .main-link.focused {
   box-shadow: none;
+  color: #000000;
+
 }
 
 .title-voting {
