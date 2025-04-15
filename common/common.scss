@@ -22,7 +22,7 @@ html, body {
 
 .sidebar-section-link-wrapper .sidebar-section-link {
   color: #000000;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
@@ -336,8 +336,8 @@ html {
     background:
       linear-gradient(
         0deg,
-        rgba(var(#6b54de), 0.075) 0%,
-        rgba(var(#6b54de), 0.075) 100%
+        rgba(var(--primary-rgb), 0.075) 0%,
+        rgba(var(--primary-rgb), 0.075) 100%
       ),
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
     color: #000000; /* Texte en noir */
