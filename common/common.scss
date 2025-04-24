@@ -7,6 +7,10 @@ html, body {
   color: #000000 !important; /* Tout le texte en noir */
 }
 
+h1, h2, h3 {
+  font-family: 'IBM Plex Sans', sans-serif; /* Optionnel : ajoute cette ligne si tu veux la police */
+}
+
 /* Couleur globale pour les icônes */
 .d-icon, svg {
   color: #07556d; /* Toutes les icônes en #07556d */
@@ -29,116 +33,6 @@ html, body {
   color: #000000;
 }
 
-// custom search banner customizations
-.custom-search-banner-wrap {
-  margin: 0 auto !important;
-  max-width: unset;
-  color: #000000; /* Texte en noir */
-
-  h1 {
-    line-height: var(--line-height-small);
-    font-family: 'IBM Plex Sans';
-
-    @include breakpoint("large", min-width) {
-      font-size: 4em;
-    }
-  }
-
-  h3 {
-    line-height: var(--line-height-small);
-    font-family: 'IBM Plex Sans';
-
-    @include breakpoint("large", min-width) {
-      font-size: 4em;
-    }
-  }
-
-  p {
-    margin-top: 0.5em;
-    margin-bottom: 2em;
-    font-family: 'IBM Plex Sans';
-
-
-    @include breakpoint("large", min-width) {
-      font-size: var(--font-up-1);
-    }
-  }
-
-  .btn {
-    height: 100%;
-    color: #000000; /* Boutons en noir */
-  }
-
-  .search-menu input[type="text"] {
-    border: 1px solid transparent;
-    border-radius: 0.25em;
-    min-height: 40px;
-    color: #000000; /* Texte de l'input en noir */
-
-    &:focus {
-      outline: 3px solid rgba(7, 85, 109, 0.35); /* Ajusté pour correspondre à #07556d */
-    }
-  }
-
-  .widget-link.show-help {
-    color: rgba(7, 85, 109, 0.75); /* Ajusté pour #07556d */
-    border-radius: 0.5em;
-    padding: 0.5em;
-    background-color: rgba(var(--secondary-rgb), 0.25);
-
-    &:hover {
-      color: #07556d; /* Hover en #07556d */
-    }
-  }
-
-  .search-menu .search-input {
-    border-color: #6b54de;
-    outline: #6b54de;
-    color: #000000; /* Texte en noir */
-  }
-
-  .results {
-    top: 43px;
-    border-radius: 0.25em;
-    color: #000000; /* Texte en noir */
-  }
-
-  .search-context {
-    top: 3.25em;
-    right: 1em;
-    color: #000000; /* Texte en noir */
-  }
-}
-
-.search-input {
-  border-radius: 0.25em;
-  color: #000000; /* Texte en noir */
-}
-
-.display-search-banner {
-  #main-outlet {
-    padding-top: 2em;
-  }
-}
-
-.above-main-container-outlet.search-banner {
-  .custom-search-banner-wrap {
-    padding: 1em 0 2em;
-    color: #000000; /* Texte en noir */
-
-    .mobile-view & {
-      color: #000000; /* Texte en noir même en mobile */
-    }
-
-    h1 {
-      margin-bottom: 0;
-    }
-
-    .search-widget {
-      margin-top: 2em;
-    }
-  }
-}
 
 .topic-category {
   padding-top: 20px;
