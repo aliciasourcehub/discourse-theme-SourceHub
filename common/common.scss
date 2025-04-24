@@ -645,11 +645,15 @@ html body #main-outlet {
   color: #000000; /* Texte en noir */
 }
 
+
+
 .search-banner {
-  background: #1a73e8; /* Blue background like Audacity forum */
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  margin: 0 auto; /* Ensure it centers within the main wrapper */
+  width: 100%; /* Ensure it spans the full width of the main wrapper */
+  box-sizing: border-box; /* Prevent padding from causing overflow */
 }
 
 .welcome-banner__inner-wrapper {
