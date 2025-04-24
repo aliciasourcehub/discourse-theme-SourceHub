@@ -573,7 +573,7 @@ html body #main-outlet {
         }
 
         &:focus-visible td:nth-of-type(2) {
-          box-shadow: inset 3px 0 0 var(--tertiary);
+          box-shadow: inset 3px 0 0 #07556d;
           border-radius: calc(1em - 3px);
         }
       }
@@ -716,9 +716,7 @@ html body #main-outlet {
 }
 
 .topic-list .main-link.focused + .posters {
-  box-shadow: inset 3px 0 0 var(--tertiary);
-  color: #000000;
-
+  box-shadow: inset 3px 0 0 #07556d;
 }
 
 .topic-list .main-link.focused {
