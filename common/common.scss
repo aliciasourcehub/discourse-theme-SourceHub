@@ -644,3 +644,70 @@ html body #main-outlet {
   padding-left: 14px;
   color: #000000; /* Texte en noir */
 }
+
+.search-banner {
+  background: #1a73e8; /* Blue background like Audacity forum */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.welcome-banner__inner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.welcome-banner__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-banner__wrap h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.welcome-banner__wrap p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.welcome-banner__search-menu {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-icon {
+  background: #fff;
+  color: #1a73e8;
+  border-radius: 4px 0 0 4px;
+  padding: 10px;
+}
+
+.search-term__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 1rem;
+}
+
+.show-advanced-search {
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .welcome-banner__wrap h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-banner__search-menu {
+    max-width: 100%;
+  }
+}
