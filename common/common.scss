@@ -308,7 +308,10 @@ div.ac-wrap {
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   border-radius: 8px;
   border: 1px solid transparent;
-  color: #000000; /* Texte en noir */
+}
+
+.btn-primary {
+  background-color: #07556d;
 }
 
 .post-admin-menu.popup-menu {
