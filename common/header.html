@@ -1,1 +1,12 @@
 <div class="background-container"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.querySelector('#custom-search-input');
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          window.location.href = '/search?q=' + encodeURIComponent(searchInput.value);
+        }
+      });
+    });
+  </script>

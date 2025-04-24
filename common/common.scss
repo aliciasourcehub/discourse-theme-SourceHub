@@ -644,3 +644,102 @@ html body #main-outlet {
   padding-left: 14px;
   color: #000000; /* Texte en noir */
 }
+
+/* Styles pour la bannière de bienvenue */
+.below-site-header-outlet.search-banner.welcome-banner {
+  background: #ffffff !important;
+  padding: 2em 0;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  color: #000000 !important;
+}
+
+.custom-search-banner.welcome-banner__inner-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.custom-search-banner-wrap.welcome-banner__wrap {
+  color: #000000 !important;
+}
+
+.welcome-banner__wrap h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #000000 !important;
+}
+
+.welcome-banner__wrap p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #000000 !important;
+}
+
+.welcome-banner__wrap p a {
+  color: #07556d !important;
+  text-decoration: underline;
+}
+
+.welcome-banner__wrap p a:hover {
+  color: #053f52 !important;
+}
+
+.search-menu.welcome-banner__search-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search-icon.btn {
+  background: #07556d !important;
+  color: #ffffff !important;
+  border-radius: 0.25em;
+  padding: 0.5em;
+}
+
+.search-menu-container.menu-panel-results {
+  display: inline-block;
+}
+
+.search-input.search-input-- {
+  position: relative;
+}
+
+#custom-search-input.search-term__input {
+  border: 1px solid #07556d !important;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  min-width: 200px;
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+#custom-search-input.search-term__input:focus {
+  outline: 2px solid #07556d !important;
+}
+
+.show-advanced-search.btn-transparent {
+  background: transparent !important;
+  color: #07556d !important;
+}
+
+.show-advanced-search.btn-transparent:hover {
+  background: rgba(7, 85, 109, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+  .welcome-banner__wrap h1 {
+    font-size: 1.8em;
+  }
+
+  .welcome-banner__wrap p {
+    font-size: 1em;
+  }
+
+  #custom-search-input.search-term__input {
+    min-width: 150px;
+  }
+}
