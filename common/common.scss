@@ -651,9 +651,9 @@ html body #main-outlet {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  margin: 0 auto; /* Ensure it centers within the main wrapper */
-  width: 100%; /* Ensure it spans the full width of the main wrapper */
-  box-sizing: border-box; /* Prevent padding from causing overflow */
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .welcome-banner__inner-wrapper {
