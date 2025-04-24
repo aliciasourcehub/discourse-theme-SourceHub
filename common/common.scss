@@ -8,8 +8,13 @@ html, body {
   color: #000000 !important; /* Tout le texte en noir */
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Montserrat'; /* Optionnel : ajoute cette ligne si tu veux la police */
+}
+
+h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: lighter;
 }
 
 /* Couleur globale pour les icônes */
