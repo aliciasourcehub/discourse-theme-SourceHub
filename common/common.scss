@@ -1,5 +1,6 @@
 /* Import de la police IBM Plex Sans (facultatif, si tu veux l'utiliser) */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Police globale et texte en noir par défaut */
 html, body {
@@ -8,7 +9,7 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: 'IBM Plex Sans', sans-serif; /* Optionnel : ajoute cette ligne si tu veux la police */
+  font-family: 'Montserrat'; /* Optionnel : ajoute cette ligne si tu veux la police */
 }
 
 /* Couleur globale pour les icônes */
