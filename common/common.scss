@@ -37,6 +37,7 @@ html, body {
 
   h1 {
     line-height: var(--line-height-small);
+    font-family: 'IBM Plex Sans', sans-serif;
 
     @include breakpoint("large", min-width) {
       font-size: 4em;
@@ -45,6 +46,7 @@ html, body {
 
   h3 {
     line-height: var(--line-height-small);
+    font-family: 'IBM Plex Sans', sans-serif;
 
     @include breakpoint("large", min-width) {
       font-size: 4em;
@@ -54,6 +56,8 @@ html, body {
   p {
     margin-top: 0.5em;
     margin-bottom: 2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+
 
     @include breakpoint("large", min-width) {
       font-size: var(--font-up-1);
