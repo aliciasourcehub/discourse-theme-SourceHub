@@ -40,12 +40,13 @@ export default {
             </div>
           `;
 
-          // Insert the banner into the DOM
-          const headerOutlet = document.querySelector(".below-site-header-outlet");
-          if (headerOutlet) {
-            headerOutlet.appendChild(banner);
+          // Insert the banner into the DOM inside .wrap, before #main-outlet
+          const wrap = document.querySelector(".wrap");
+          const mainOutlet = document.querySelector("#main-outlet");
+          if (wrap && mainOutlet) {
+            wrap.insertBefore(banner, mainOutlet);
           } else {
-            // Fallback: If the outlet isn't found, append to the body
+            // Fallback: Append to the body if .wrap or #main-outlet isn't found
             document.body.appendChild(banner);
           }
         }
