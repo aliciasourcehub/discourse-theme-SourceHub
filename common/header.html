@@ -1,1 +1,8 @@
 <div class="background-container"></div>
+
+{{#if (theme-setting 'enableCustomSearchBanner')}}
+  <div class="custom-search-banner welcome-banner__inner-wrapper">
+    <input type="text" placeholder="{{theme-setting 'searchPlaceholder'}}" 
+           onkeydown="if (event.key === 'Enter') { window.location='/search?q=' + encodeURIComponent(this.value); }" />
+  </div>
+{{/if}}
