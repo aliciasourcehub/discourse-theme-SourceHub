@@ -645,34 +645,16 @@ html body #main-outlet {
   color: #000000; /* Texte en noir */
 }
 
-.custom-search-banner-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.custom-search-banner {
-  background: #f5f5f5;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 60%; // Largeur du bloc de recherche
-
-  input[type="text"] {
-    width: 80%;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  @media (max-width: 768px) {
-    width: 90%;
-
-    input[type="text"] {
-      width: 90%;
-    }
-  }
+.mitt-outlet-location {
+  display: inline-block;
+  outline: 2px solid #060;
+  background-color: rgba(140, 220, 140, 0.6);
+  margin: 0;
+  padding: 0 0.2em;
+  list-style: none;
+  color: #030;
+  font-weight: bold;
+  font-size:  0.9em;
+  position: relative;
+  z-index: 10000;
 }
