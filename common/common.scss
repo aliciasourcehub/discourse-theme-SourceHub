@@ -663,7 +663,27 @@ button.passkey-login-button {
   display: none !important;
 }
 
-/* Masquer la colonne gauche (login par email/mot de passe) */
+/* Masquer la colonne gauche (login par email/mot de passe)
 .login-left-side {
   display: none !important;
+}
+
+*/
+
+/* Masquer uniquement le formulaire login */
+form#login-form,
+.login-page-cta,
+.login__password-links,
+.caps-lock-warning {
+  display: none !important;
+}
+
+/* (Optionnel) Réduire l’espace vide après suppression du formulaire */
+.login-left-side {
+  padding-bottom: 1em;
+}
+
+/* Garder le titre "Ravi de vous revoir" */
+.login-welcome-header .login-title {
+  display: block !important;
 }
