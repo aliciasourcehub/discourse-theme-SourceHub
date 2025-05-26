@@ -658,3 +658,7 @@ html body #main-outlet {
   position: relative;
   z-index: 10000;
 }
+
+button.passkey-login-button {
+  display: none !important;
+}
