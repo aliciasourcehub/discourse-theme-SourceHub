@@ -662,3 +662,8 @@ html body #main-outlet {
 button.passkey-login-button {
   display: none !important;
 }
+
+/* Masquer la colonne gauche (login par email/mot de passe) */
+.login-left-side {
+  display: none !important;
+}
